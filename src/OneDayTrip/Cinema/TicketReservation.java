@@ -96,12 +96,12 @@ public class TicketReservation {
                 break;
             }
             case 2: {
-                ticketPrice(numberOfTickets, secim);
+                ticketPrice(numberOfTickets);
                 break;
             }
             default: {
                 System.out.println("!!! Hatalı giriş yaptınız ");
-                ticketPrice(numberOfTickets, secim);
+                ticketPrice(numberOfTickets);
             }
         }
     }
@@ -153,7 +153,8 @@ public class TicketReservation {
                             yemeIcmeMenu(numberOfTickets, secim);
                         }
                         case 6: {
-                            ticketPrice(numberOfTickets, secim);
+                            ticketPrice(numberOfTickets);
+                            System.exit(0);
                         }
                         default: {
                             System.out.println("!!! Hatalı seçim yaptınız ");
@@ -238,7 +239,7 @@ public class TicketReservation {
     }
 
     //nihai olarak bilet fiyatını hesaplayan metod
-    private static void ticketPrice(int numberOfTickets, int secim) {
+    private static void ticketPrice(int numberOfTickets) {
         System.out.println("");
         System.out.println("****************************************");
         System.out.println("               ADİSYONUNUZ              ");
@@ -265,19 +266,19 @@ public class TicketReservation {
         System.out.println("");
         System.out.println("****************************************");
 
-        System.out.println("1- Bilet Al \n2- Çıkış");
-        switch (scan.nextInt()) {
-            case 1 -> {
-                ticketprice -= 25 * numberOfTickets;  // !****************************
-                ticket();
-                break;
-            }
-            case 2 -> System.exit(0);
-            default -> {
-                System.out.println("!!! Hatalı giriş yaptınız");
-                ticket();
-            }
-        }
+//        System.out.println("1- Bilet Al \n2- Çıkış");
+//        switch (scan.nextInt()) {
+//            case 1 -> {
+//                ticketprice -= 25 * numberOfTickets;  // !****************************
+//                ticket();
+//                break;
+//            }
+//            case 2 -> System.exit(0);
+//            default -> {
+//                System.out.println("!!! Hatalı giriş yaptınız");
+//                ticket();
+//            }
+//        }
 
 
     }

@@ -53,23 +53,23 @@ public class IslemYap {
         System.out.println("");
         System.out.println("Toplam Faturanız : " + fatura + "\n\n");
 
-        System.out.println("Bir sonraki aktiviteniz ne olsun \n1- Sinema \n2- Çıkış");
-        switch (scan.nextInt()) {
-
-            case 1: {
-                System.out.println("ArtOfCoding Cinema ya gidiyoruz .. ");
-                CinemaRunner cine = new CinemaRunner();
-                cine.listMenu();
-                break;
-            }
-            case 2: {
-                System.out.println("Umarız gününüz eğlenceli geçmiştir, iyi günler .. ");
-                System.exit(0);
-            }
-            default: {
-                System.out.println("!!! Hatalı giriş yaptınız ");
-            }
-        }
+//        System.out.println("Bir sonraki aktiviteniz ne olsun \n1- Sinema \n2- Çıkış");
+//        switch (scan.nextInt()) {
+//
+//            case 1: {
+//                System.out.println("ArtOfCoding Cinema ya gidiyoruz .. ");
+//                CinemaRunner cine = new CinemaRunner();
+//                cine.listMenu();
+//                break;
+//            }
+//            case 2: {
+//                System.out.println("Umarız gününüz eğlenceli geçmiştir, iyi günler .. ");
+//                System.exit(0);
+//            }
+//            default: {
+//                System.out.println("!!! Hatalı giriş yaptınız ");
+//            }
+//        }
     }
 
     public static void GarsonaBahsısBırak() {
